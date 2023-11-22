@@ -1,0 +1,3 @@
+ for pool in resp.json()['data']:
+            pools[f"{pool['name']} ({pool['chain']})"] = []
+            for item in pool['portfolio_item_list']:
